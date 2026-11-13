@@ -1,0 +1,4 @@
+app:
+  jwt:
+    secret: yctoFiHRJv5p72xKnRK+EFKjm12/Mw1CK7R58FPzpbU=
+    expiration: PT1H

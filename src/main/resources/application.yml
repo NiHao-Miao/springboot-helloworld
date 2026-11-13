@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: springboot-helloworld
+
+server:
+  port: 8080
+  error:
+    include-message: never
+    include-stacktrace: never
+
+app:
+  jwt:
+    # Demo-only default. Set APP_JWT_SECRET to a Base64-encoded, 32+ byte secret
+    # before deploying anywhere beyond a local demo.
+    secret: ${APP_JWT_SECRET:FFdEzIB6XKN6Bbe/WpdisGmjt+L/k46CzebFKhWola4=}
+    expiration: ${APP_JWT_EXPIRATION:PT1H}
